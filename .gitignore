@@ -2,3 +2,5 @@
 *.pickle
 *.xml
 weights
+/.project
+/.pydevproject
