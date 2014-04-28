@@ -14,7 +14,7 @@ class Sample(TreeModel):
 
 with root_open('sample.root', 'recreate'):
     tree = Tree('sample', model=Sample)
-    for i in xrange(int(1e4)):
+    for i in xrange(10000):
         if i % 4 == 0:
             tree.a = gauss(1, 1)
             tree.b = gauss(1, 1)
