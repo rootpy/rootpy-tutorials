@@ -1,5 +1,4 @@
-from root_numpy import root2rec
-import numpy as np
+from root_numpy import root2rec, rec2array
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.tree import DecisionTreeClassifier
 import pickle
@@ -7,8 +6,7 @@ import pickle
 # read the sample
 sample = root2rec('sample.root')
 y = sample['label']
-
-X = np.vstack([sample[var] for var in ['a', 'b']]).T
+X = rec2array(sample, fields=['a', 'b'])
 
 dt = DecisionTreeClassifier(
     max_depth=3,
