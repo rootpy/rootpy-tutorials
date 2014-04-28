@@ -1,5 +1,4 @@
-from rootpy.tree import Tree, TreeModel
-from rootpy.types import FloatCol, BoolCol
+from rootpy.tree import Tree, TreeModel, FloatCol, BoolCol
 from rootpy.io import root_open
 from random import gauss
 import random

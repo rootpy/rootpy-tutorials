@@ -11,12 +11,12 @@ y = sample['label']
 X = np.vstack([sample[var] for var in ['a', 'b']]).T
 
 dt = DecisionTreeClassifier(
-        max_depth=3,
-        min_samples_leaf=150)
+    max_depth=3,
+    min_samples_leaf=150)
 bdt = AdaBoostClassifier(dt,
-        algorithm='SAMME',
-        n_estimators=850,
-        learning_rate=0.5)
+    algorithm='SAMME',
+    n_estimators=850,
+    learning_rate=0.5)
 
 bdt.fit(X, y)
 with open('sklearn_bdt.pickle', 'w') as f:
