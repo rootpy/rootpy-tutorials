@@ -30,3 +30,6 @@ training and evaluation with TMVA and scikit-learn.
 * Evaluate the classifiers on a 2D grid and then plot the decision boundary
   contours.
 * Compare training and evaluation times
+
+Also see this [blog post](http://betatim.github.io/posts/matching-machine-learning/) 
+comparing TMVA and scikit-learn.
