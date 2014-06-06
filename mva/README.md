@@ -2,8 +2,8 @@
 
 ## Introduction
 
-Most high-energy physicists use for machine learning the [TMVA](http://tmva.sourceforge.net/)
-package that is integrated in [ROOT](http://root.cern.ch/).
+Most high energy physicists use the [TMVA](http://tmva.sourceforge.net/)
+package that is integrated in [ROOT](http://root.cern.ch/) for machine learning.
 
 Since [rootpy](http://rootpy.org/) makes it easy to convert ROOT TTrees to numpy arrays,
 it is easily possible to use Python machine learning packages
