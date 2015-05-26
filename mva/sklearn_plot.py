@@ -60,4 +60,5 @@ pl.ylabel('Samples')
 pl.xlabel('Decision Scores')
 
 pl.subplots_adjust(wspace=0.25)
+pl.savefig("sklearn.png")
 pl.show()
